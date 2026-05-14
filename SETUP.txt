@@ -1,0 +1,35 @@
+VAULT APP - SETUP INSTRUCTIONS
+================================
+
+1. INSTALL DEPENDENCIES
+   Run: npm install
+
+2. SETUP OPENAI API KEY
+   - Copy .env.example to .env
+   - Get your OpenAI API key from: https://platform.openai.com/api-keys
+   - Open .env file and replace 'your-openai-api-key-here' with your actual API key
+   
+   Example .env file:
+   VITE_OPENAI_API_KEY=sk-proj-xxxxxxxxxxxxxxxxxxxxx
+
+3. RUN THE APP
+   Run: npm run dev
+   
+4. FEATURES ENABLED
+   - Voice-to-Text (Whisper API) - Supports Urdu, Hindi, English
+   - AI Legal Report Generation (GPT-4)
+   - Text-to-Speech (TTS API) - Reads report back in native language
+   - Hardcoded legal database for Pakistan and India
+
+5. USAGE
+   - Click "Get Started" on landing page
+   - Navigate to "AI Assistant" tab
+   - Select your language (Urdu/Hindi/English)
+   - Record your voice
+   - Get instant legal guidance with laws cited
+   - Listen to report in your language
+
+IMPORTANT NOTES:
+- Keep your API key secure and never commit .env file to git
+- The .env file is already in .gitignore
+- OpenAI API usage will incur costs based on your usage
